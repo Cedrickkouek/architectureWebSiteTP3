@@ -1,6 +1,7 @@
 
 body{
     min-width: 320px;
+    overflow-x: hidden;
 }
 header nav{
     display: flex;
@@ -132,7 +133,10 @@ footer{
 .carousselParent{
     display: flex;
     position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
     z-index: 1;
+    width: 100%;
     transition-property: transform;
     box-sizing: content-box;
     color: #ffffff;
