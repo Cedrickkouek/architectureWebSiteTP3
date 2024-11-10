@@ -1,0 +1,130 @@
+body{
+    min-width: 320px;
+}
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+header{
+    padding: 1rem 10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: absolute !important;
+    z-index: 10011;
+}
+
+header{
+    background-color: black;
+}
+nav, .startLinks a{
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.startLinks a{
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.middleText{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleText svg{
+    width: 100%;
+}
+
+.middleText h5{
+    letter-spacing: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    padding: 1rem 10px;
+    flex-grow: 1;
+    background-color: chocolate;
+}
+footer{
+    background-color: magenta;
+    padding: 0.5rem 1rem;
+}
+.backgroundVideo{
+    position: relative;
+    height: 100vh;
+}
+#videoRepeated{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bannerContent{
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 100vh;
+    position: relative;
+}
+.scrollDownAnimation{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 0;
+    pointer-events: none;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollDownContent{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+
+.scrollDownText {
+    padding-right: 5px;
+}
+
+@keyframes sdb05 {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(10px);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+.scrollDownArrow svg{
+    animation: sdb05 1.5s infinite; 
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: sdb05;
+}
