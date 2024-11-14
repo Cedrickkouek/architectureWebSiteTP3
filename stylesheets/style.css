@@ -163,6 +163,7 @@ footer{
     flex-shrink: 0;
     position: relative;
     transition-property: transform;
+    transition: transform 0.8s ease, background-color 0.8s ease;
 }
 
 .contentText {
@@ -179,7 +180,7 @@ footer{
     line-height: 1.2;
     z-index: 2;
 }
-.imageContainer::before, .backgroundVideo::before{
+.carousselContent::before, .backgroundVideo::before{
     content: '';
     position: absolute;
     top: 0;
@@ -190,29 +191,29 @@ footer{
     pointer-events: none;
     z-index: 1;
 }
-.imageContainer:hover::before {
-    transition: all 0.7s ease;
+.carousselContent:hover::before {
+    transition: all 0.3s ease;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.imageContainer:hover + .contentText{
-    transition: all 0.3s ease;
+.carousselContent:hover .contentText{
+    transition: all 0.5s ease;
     padding: 90px 60px;
 }
-.imageContainer:hover ~ .viewMore{
+.carousselContent:hover .viewMore{
     display: block;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 }
-.imageContainer:hover ~ .viewMore .line1 {
+.carousselContent:hover .viewMore .line1 {
     opacity: 0.5;
     transform: translateY(0);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.7s ease, transform 0.3s ease;
 }
 
-.imageContainer:hover ~ .viewMore .moreText {
+.carousselContent:hover .viewMore .moreText {
     opacity: 1;
     transform: translateY(0);
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 }
 .viewMore{
     color: #ffffff;
