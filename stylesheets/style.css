@@ -2,8 +2,30 @@
 body{
     min-width: 320px;
     overflow-x: hidden;
-    font-family: 'DIN';
+    font-family: Arial, Helvetica, sans-serif;
 }
+a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 0.05em;
+    bottom: 0;
+    left: 0;
+    background: currentcolor;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
 header nav{
     display: flex;
     justify-content: space-evenly;
@@ -22,6 +44,9 @@ header{
 }
 nav, .startLinks a{
     color: rgb(255, 255, 255);
+    font-family: 'DIN light';
+    letter-spacing: 0.08em;
+    font-weight: 600;
 }
 
 nav{
@@ -29,7 +54,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.startLinks a{
+.startLinks a, .contact a{
     margin: 0 13px;
     text-decoration: none;
     font-size: 14px;
@@ -226,6 +251,7 @@ footer{
     bottom: 0;
     height: auto;
     padding: 30px 60px;
+    font-family: "DIN light";
 }
 .moreText, .line1{
     display: flex;
@@ -285,6 +311,7 @@ footer{
     align-content: center;
     align-items: center;
     justify-content: flex-end;
+    font-family: "DIN Light";
 }
 
 .inspiration-content span{
@@ -300,12 +327,15 @@ footer{
     font-family:Arial, Helvetica, sans-serif;
 }
 .bottomContent{
+    position: relative;
     transition: all 0.9s ease;
     display: flex;
     background-image: url('../assets/images/JH-marquee.svg');
     background-repeat: no-repeat;
     padding: 200px 0;
+    color: #000000;
 }
+
 .setText, .bottomContent img{
     display: flex;
     flex-direction: column;
@@ -317,7 +347,10 @@ footer{
 }
 .abt{
     margin: 30px;
+    position: sticky;
     font-size: 16px;
+    font-family: "DIN light";
+    font-weight: 600;
 }
 .moreAbout{
     display: flex;
@@ -325,16 +358,30 @@ footer{
     align-items: center;
     margin-top: 35px;
     margin-bottom: 25px;
+    font-family: "DIN Light";
 }
 .moreAbout span{
     transition: all 0.4s ease;
     margin-right: 15px;
     cursor: pointer;
+    font-size: 16px;
+}
+
+.moreAbout span:first-of-type {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+}
+
+.moreAbout:hover{
+    color: gray;
+}
+.moreAbout:hover .lineM{
+    background-color: gray;
 }
 
 .moreAbout span:hover{
-    letter-spacing: 0.13em;
-
+    letter-spacing: 0.17em;
 }
 
 .p2{
@@ -342,12 +389,85 @@ footer{
 }
 
 .paragraph p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DIN light";
+    color: #000000;
+    font-size: 18px;
     line-height: 2em;
-    letter-spacing: 0.15em;
-    font-size: 17px;
 }
 
 .imageBottom{
     height: 620px;
+}
+
+footer{
+    display: flex;
+    color: #ffffff;
+    height: auto;
+    padding: 60px 30px 30px;
+    width: 100%;
+    background-color: #000000;
+    justify-content: space-between;
+}
+
+.brand{
+    display: flex;
+    flex-direction: column;
+    margin: 0 22.3125px;
+}
+
+.brand img{
+    width: 200px;
+    height: 34.695px;
+    margin-bottom: 15px;
+}
+ .contact, .social{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 14.5781px 20px 14.5781px;
+}
+
+.adresses{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    padding-right: 60px;
+}
+
+.contact a, .social a, .brand a{
+    text-decoration: none;
+    color: #9F9F9F;
+}
+
+.contact a:hover, .social a:hover, .brand a:hover{
+    color: #ffffff;
+}
+
+.contact ul, .adress p, .social ul{
+    list-style-type: none;
+    margin: 12px 0px;
+    padding: 0;
+    color: #9F9F9F;
+}
+
+.adress p{
+    font-size: 14px;
+}
+
+.brand p {
+    margin: 16px 0px;
+    color: #9F9F9F;
+    font-size: 16px;
+    font-family: "DIN Light";
+    line-height: 1.5em;
+}
+.contactText{
+    display: flex;
+    align-items: center;
+}
+
+.contactText h4{
+    letter-spacing: 0.16em;
+    margin: 5px 15px 5px 0px;
+    font-family: "DIN light";
+    font-size: 14px;
 }
