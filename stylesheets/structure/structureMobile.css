@@ -1,0 +1,42 @@
+@media (max-width: 1024px){
+    .menuHamburger{
+        display: flex;
+        flex-grow: 1;
+        cursor: pointer;
+        justify-content: flex-end;
+
+    }
+
+    .startLinks{
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between; /* Space between middleText and hamburger */
+        align-items: center;
+        padding: 1.5rem 20px;
+        width: 100%;
+        background-color: black;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Stretch nav to the full width */
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .middleText {
+        flex-grow: 0; /* Allow it to take up available space */
+        display: flex;
+        justify-content: flex-start; /* Align middle text to the left */
+    }
+    
+}

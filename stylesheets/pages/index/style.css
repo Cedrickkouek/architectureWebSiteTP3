@@ -37,6 +37,7 @@ nav{
 .menuHamburger{
     display: none;
 }
+
 .startLinks a, .contact a{
     margin: 0 13px;
     text-decoration: none;
@@ -53,9 +54,6 @@ nav{
     width: 100%;
 }
 
-.middleText h5{
-    letter-spacing: 10px;
-}
 .container{
     display: flex;
     flex-direction: column;
