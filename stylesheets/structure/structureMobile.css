@@ -70,5 +70,12 @@
     .abt{
         margin: 20px;
     }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .adresses{
+        margin-left: -100px;
+    }
     
 }
