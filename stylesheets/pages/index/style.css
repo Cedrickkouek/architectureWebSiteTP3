@@ -275,7 +275,7 @@ footer{
 }
 .inspiration{
     background-color: hsl(0, 0%, 0%);
-    height: 90vh;
+    height: 100vh;
     flex-wrap: wrap;
     color: #ffffff;
     padding: 200px 30px 180px 30px;
@@ -374,6 +374,7 @@ footer{
     color: #000000;
     font-size: 18px;
     line-height: 2em;
+    margin-bottom: 30px;
 }
 
 .imageBottom{

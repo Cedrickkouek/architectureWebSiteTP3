@@ -23,7 +23,7 @@
     header nav {
         display: flex;
         align-items: center;
-        width: 100%; /* Stretch nav to the full width */
+        width: 100%;
     }
 
     nav{
@@ -34,9 +34,41 @@
     }
 
     .middleText {
-        flex-grow: 0; /* Allow it to take up available space */
+        flex-grow: 0; 
         display: flex;
-        justify-content: flex-start; /* Align middle text to the left */
+        justify-content: flex-start; 
+    }
+
+    .inspiration-content span{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 52px;
+    }
+    .inspiration-content{
+        display: flex;
+        align-items: center;
+        padding: -100px 0px 30px 40px;
+        height: auto;
+    }
+
+    .inspiration{
+        align-items: center;
+        justify-items: center;
+        height: fit-content;
+    }
+    .bottomContent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 100px 50px 50px 50px;
+    }
+    .setText, .bottomContent img{
+        width: 100%;
+    }
+
+    .abt{
+        margin: 20px;
     }
     
 }
