@@ -275,9 +275,9 @@ footer{
 }
 .inspiration{
     background-color: hsl(0, 0%, 0%);
-    height: 100vh;
+    height: 93vh;
     flex-wrap: wrap;
-    color: #ffffff;
+    text-align: center;
     padding: 200px 30px 180px 30px;
 }
 .inspiration-content{
@@ -287,23 +287,23 @@ footer{
     margin-left: calc(-4% / 2);
     margin-right: calc(-4% / 2);
     padding-left: 0;
-    padding-right: 45px;
+    padding-right: 180px;
     display: flex;
-    align-content: center;
-    align-items: center;
+    align-content: right;
+    align-items: right;
     justify-content: flex-end;
     font-family: "DIN Light";
 }
 
 .inspiration-content span{
-    color: #c5c5c5;
+    color: #d4d3d3;
     font-style: normal;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.010em;
     line-height: 1.2;
-    margin: 0;
+    margin-right: 40px;
     width: 65%;
-    font-size: 48px;
-    text-align: start;
+    font-size: 60px;
+    text-align: left;
     margin-right: 70px;
     font-family:"DIN Light";
 }
